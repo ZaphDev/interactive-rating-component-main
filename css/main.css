@@ -23,7 +23,7 @@ body {
 }
 
 .card .card1 {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
@@ -70,6 +70,8 @@ body {
   border-radius: 100%;
   font-family: 'Overpass', sans-serif;
   color: #7c8798;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 .card .card1__rate__number:hover {
@@ -96,5 +98,48 @@ body {
 }
 
 .card .card2 {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.card .card2__img {
+  margin-top: 10px;
+}
+
+.card .card2__result {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  background-color: #252d37;
+  color: #fb7413;
+  font-family: "Overpass", sans-serif;
+  width: 205px;
+  padding: 8px 20px 5px 20px;
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+.card .card2__thankyou {
+  margin-bottom: 15px;
+  padding: 0px 5px;
+}
+
+.card .card2__thankyou h2 {
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.card .card2__thankyou p {
+  font-family: 'Overpass', sans-serif;
+  color: #7c8798;
+  font-size: 15px;
+  line-height: 1.7;
 }
