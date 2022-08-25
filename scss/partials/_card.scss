@@ -1,0 +1,74 @@
+.card{
+    background: radial-gradient(circle at top, rgba(36,41,53,255) 0%, rgba(23,30,40,255) 60%);
+    height: 415px;
+    width: 410px;
+    border-radius: 30px;
+    
+    .card1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        &__star{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include circle-Style;
+                    
+        }
+        &__question{
+            h2{
+                font-family: $mainFont;
+                color: white;
+                font-size: 26px;
+                margin-bottom: 12px;
+            }
+            p{
+            @include pText-Style; 
+                font-size: 15px;
+                line-height: 1.7;
+            }
+        }
+        &__rate{
+            display: flex;
+            justify-content: space-between;
+            &__number{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include circle-Style;
+                @include pText-Style;
+                &:hover{
+                    background-color: hsl(216, 12%, 54%);
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+
+        }
+        &__submit{
+            button{
+                width: 100%;
+                padding: 15px;
+                border-radius: 30px;
+                background-color:$primaryColor;
+                font-family: $mainFont;
+                color: white;
+                font-weight: 700;
+                font-size: 15px;
+                &:hover{
+                    background-color: white;
+                    color: $primaryColor;
+                    cursor: pointer;
+                }
+                            
+            }
+        }
+
+    }
+    .card2{
+        display: none;
+    }
+}
