@@ -5,7 +5,7 @@
     border-radius: 30px;
     
     .card1{
-        display: none;
+        display: flex;
         @include flex-Card;
         &__star{
             display: flex;
@@ -63,7 +63,7 @@
 
     }
     .card2{
-        display: flex;
+        display: none;
         @include flex-Card;
         align-items: center;
         text-align: center;
