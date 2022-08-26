@@ -4,7 +4,7 @@
     width: 410px;
     border-radius: 30px;
     
-    .card1{
+    &__1{
         display: flex;
         @include flex-Card;
         &__star{
@@ -55,14 +55,21 @@
                 &:hover{
                     background-color: white;
                     color: $primaryColor;
-                    cursor: pointer;
+                    cursor: pointer;                                        
                 }
-                            
-            }
+                animation: 0s;
+                @keyframes shake {
+                    0% { transform: translate(2px, 0px) rotate(0deg); } 
+                    33% { transform: translate(-4px, 0px) rotate(0deg); }                
+                    100% { transform: translate(2px, 0px) rotate(0deg); }
+                }                      
+                     
+            }           
+        
         }
 
     }
-    .card2{
+    &__2{
         display: none;
         @include flex-Card;
         align-items: center;
@@ -99,3 +106,4 @@
         }
     }
 }
+

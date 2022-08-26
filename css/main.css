@@ -22,7 +22,7 @@ body {
   border-radius: 30px;
 }
 
-.card .card1 {
+.card__1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,7 +31,7 @@ body {
   padding: 30px;
 }
 
-.card .card1__star {
+.card__1__star {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,26 +41,26 @@ body {
   border-radius: 100%;
 }
 
-.card .card1__question h2 {
+.card__1__question h2 {
   font-family: "Overpass", sans-serif;
   color: white;
   font-size: 26px;
   margin-bottom: 12px;
 }
 
-.card .card1__question p {
+.card__1__question p {
   font-family: 'Overpass', sans-serif;
   color: #7c8798;
   font-size: 15px;
   line-height: 1.7;
 }
 
-.card .card1__rate {
+.card__1__rate {
   display: flex;
   justify-content: space-between;
 }
 
-.card .card1__rate__number {
+.card__1__rate__number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,13 +74,13 @@ body {
   line-height: 1.7;
 }
 
-.card .card1__rate__number:hover {
+.card__1__rate__number:hover {
   background-color: #7c8798;
   color: white;
   cursor: pointer;
 }
 
-.card .card1__submit button {
+.card__1__submit button {
   width: 100%;
   padding: 15px;
   border-radius: 30px;
@@ -89,15 +89,28 @@ body {
   color: white;
   font-weight: 700;
   font-size: 15px;
+  animation: 0s;
 }
 
-.card .card1__submit button:hover {
+.card__1__submit button:hover {
   background-color: white;
   color: #fb7413;
   cursor: pointer;
 }
 
-.card .card2 {
+@keyframes shake {
+  0% {
+    transform: translate(2px, 0px) rotate(0deg);
+  }
+  33% {
+    transform: translate(-4px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(2px, 0px) rotate(0deg);
+  }
+}
+
+.card__2 {
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -108,11 +121,11 @@ body {
   text-align: center;
 }
 
-.card .card2__img {
+.card__2__img {
   margin-top: 10px;
 }
 
-.card .card2__result {
+.card__2__result {
   display: flex;
   text-align: center;
   justify-content: space-around;
@@ -125,19 +138,19 @@ body {
   font-size: 15px;
 }
 
-.card .card2__thankyou {
+.card__2__thankyou {
   margin-bottom: 15px;
   padding: 0px 5px;
 }
 
-.card .card2__thankyou h2 {
+.card__2__thankyou h2 {
   color: white;
   font-family: "Overpass", sans-serif;
   font-size: 26px;
   margin-bottom: 10px;
 }
 
-.card .card2__thankyou p {
+.card__2__thankyou p {
   font-family: 'Overpass', sans-serif;
   color: #7c8798;
   font-size: 15px;

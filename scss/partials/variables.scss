@@ -1,9 +1,9 @@
-$primaryColor:hsl(25, 97%, 53%);
+$primaryColor:#fb7413;
 $mainFont: 'Overpass', sans-serif;
-$circleColor: hsl(213, 19%, 18%);
+$circleColor: #252d37;
 @mixin pText-Style{
     font-family: 'Overpass', sans-serif;
-    color:hsl(216, 12%, 54%);
+    color:#7c8798;
     font-size: 15px;
     line-height: 1.7;
 }
@@ -21,4 +21,8 @@ $circleColor: hsl(213, 19%, 18%);
     width: 100%;
     height: 100%;
     padding: 30px;
+}
+@mixin selected-Circle {
+    background-color: $primaryColor;
+    color:white;       
 }
