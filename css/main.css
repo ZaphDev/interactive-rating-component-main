@@ -15,6 +15,17 @@ body {
   background-color: #121417;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 10px;
+  color: darkgray;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
 .card {
   background: radial-gradient(circle at top, #242935 0%, #171e28 60%);
   height: 415px;
@@ -72,6 +83,10 @@ body {
   color: #7c8798;
   font-size: 15px;
   line-height: 1.7;
+}
+
+.card__1__rate__number p {
+  margin-top: 2px;
 }
 
 .card__1__rate__number:hover {
@@ -155,4 +170,10 @@ body {
   color: #7c8798;
   font-size: 15px;
   line-height: 1.7;
+}
+
+@media only screen and (max-width: 568px) {
+  .card {
+    max-width: 90%;
+  }
 }

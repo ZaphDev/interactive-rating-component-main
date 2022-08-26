@@ -34,6 +34,9 @@
                 align-items: center;
                 @include circle-Style;
                 @include pText-Style;
+                p{
+                    margin-top: 2px;
+                }
                 &:hover{
                     background-color: hsl(216, 12%, 54%);
                     color: white;
@@ -106,4 +109,8 @@
         }
     }
 }
-
+@media only screen and (max-width: 568px){
+    .card{
+        max-width: 90%;
+    }
+}
